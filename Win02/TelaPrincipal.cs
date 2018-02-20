@@ -13,6 +13,7 @@ namespace Win02 {
         public TelaPrincipal()
         {
             InitializeComponent();
+            dgvTabelaFuncionario.DataSource = SQL.FuncionarioDataAccess.PegarFuncionarios();
         }
 
         private void button1_Click(object sender, EventArgs e)
